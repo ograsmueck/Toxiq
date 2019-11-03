@@ -84,25 +84,44 @@ public class ArtikelDialog
      */
     private void ausfuehrenFunktion(int funktion) {
 
-        if (funktion == ANLEGEN) {
+        if (funktion == ANLEGEN) 
+        {
             artikel1 = artikelAnlegen();
 
-        } else if (funktion == ANLEGEN_MIN_BESTAND) {
+        }
+        
+        else if (funktion == ANLEGEN_MIN_BESTAND) 
+        {
            artikelMinBestand.artikelAnlegenMinBestand();
 
-        } else if (funktion == ZUBUCHEN) {
+        } 
+        
+        else if (funktion == ZUBUCHEN) 
+        {
             artikel1.zubuchen(zuMenge());
 
-        } else if (funktion == ABBUCHEN) {
+        } 
+        
+        else if (funktion == ABBUCHEN) 
+        {
             artikel1.abbuchen(abMenge());
 
-        } else if (funktion == SET_BESTAND) {  
+        } 
+        
+        else if (funktion == SET_BESTAND) 
+        {  
             konto1.setInhaber(einleseInhaber());
 
-        } else if (funktion == ENDE) {
+        } 
+        
+        else if (funktion == ENDE) 
+        {
             System.out.println("Das Programm wird beendet.");
 
-        } else {
+        } 
+        
+        else 
+        {
             System.out.println("Fehlerhafte Auswahl einer Funktion!");
         }
         System.out.println(artikelAnlegen);
